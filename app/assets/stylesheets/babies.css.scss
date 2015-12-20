@@ -1,0 +1,25 @@
+// Place all the styles related to the babies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-color: #47BCC4;
+	//background-image: url(space.gif); //-- image must be in the Stylesheets folder
+    background-size: 1500px 1000px;    //-- width and height
+
+}
+
+h1, h2, h3 {
+  line-height: 1;
+}
+
+h1 {
+	background-color: red;
+    text-align: center;
+    color: #00FF00;
+    font-family: cursive, sans-serif;
+}
+
+a {
+	color: #0000FF;
+}

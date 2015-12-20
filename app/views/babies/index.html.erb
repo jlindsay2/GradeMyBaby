@@ -1,0 +1,25 @@
+<!-- app/views/babies/index.html.erb -->
+<!-- "index" action for "babies" -->
+
+<body bgcolor="#20ff88">
+
+<br><br>
+<%= link_to "Home Page", root_path %> 
+<br>
+
+<h1>LIST OF BABIES</h1>
+
+<% @babies.each do |baby| %>
+	<p><%= baby.name %>
+    <%= "(#{baby.gender})" %>
+	  <%= image_tag(baby.image, size: "60x50") %>&nbsp;
+	  <%= link_to "Edit", edit_baby_path(baby) %>
+    <%= link_to "Show", baby_path(baby) %>
+  </p>
+<% end %>
+
+<br><br>
+<%= link_to "Home Page", root_path %> <br>
+<%= link_to "Enter a New Baby", new_baby_path %>
+
+</body>

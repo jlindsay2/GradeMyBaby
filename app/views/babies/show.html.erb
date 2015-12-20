@@ -1,0 +1,48 @@
+<!-- babies\show.html.erb -->
+
+<h1> BABY INFORMATION </h1>
+
+<!-- SHOW BABY INFO -->
+<p>
+    <%= @baby.name %>
+    &nbsp;
+    (<%= @baby.gender %>)
+</p>
+
+<br><%= image_tag(@baby.image, size: "200x100") %>&nbsp;
+
+<!-- SHOW EXISTING COMMENTS -->
+<h2> Comments </h2>
+<% @baby.comments.each do |comment| %>
+    <p>
+      Rating:&nbsp;<%= comment.rating %><br>
+      Comment:&nbsp; <%= comment.comment %>
+    </p>
+<% end %>
+
+<!-- CREATE A NEW COMMENT -->
+<h2> Input New Comment </h2>
+
+<%= form_for([@baby, @baby.comments.build]) do |f| %>
+    <p>
+      <%= f.label :rating %><br>
+      <%= f.text_field :rating %>
+    </p>
+    <p>
+      <%= f.label :comment %><br>
+      <%= f.text_field :comment %>
+    </p>
+
+    <p><%= f.submit %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+

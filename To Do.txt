@@ -1,0 +1,24 @@
+As of Friday 12/11/15:
+
+************************ DONE ************************
+We have a welcome screen. [Need to make it look better.]
+We can show a list of babies, edit babies, and create new babies.
+We have links on all the pages.
+We have used some CSS to make the pages look better.
+
+************** TO DO NEXT [ORDERED] *************
+- Using RubyMine (license_server="http://cartman") 
+- Ability to show comments:
+	- First, clean up Baby list
+	- Create a 'show' page for a single baby (and comments later)
+	- THEN, hook up comments to babys, etc.
+
+************* TO DO IF WE HAVE TIME [UNORDERED] ************
+- Make the Welcome/Home page look good
+- Ability to remove/delete a baby
+- How could a user upload a baby image?
+- More CSS
+
+
+
+

@@ -1,0 +1,21 @@
+
+
+<h1> Input New Baby </h1>
+
+<!-- --> 
+<%= form_for :baby, url: babies_path, method: :post  do |f| %>
+  <p> 
+	 <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p> 
+	 <%= f.label :gender %><br>
+    <%= f.text_field :gender %> &nbsp;<i>'boy' or 'girl'</i>
+  </p>
+  <p> 
+	 <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </p>
+
+  <p><%= f.submit %>
+<% end %>

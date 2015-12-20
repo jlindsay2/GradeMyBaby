@@ -1,0 +1,29 @@
+
+
+<h1> Edit Baby Information </h1>
+
+<!-- %= form_for :baby do |f| % -->
+<!-- url: babies_path, -->
+<%= form_for :baby, url: baby_path, method: :patch do |f| %>
+  <p> 
+	 <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p> 
+	 <%= f.label :gender %><br>
+    <%= f.text_field :gender %> &nbsp;<i>'boy' or 'girl'</i>
+  </p>
+  <p> 
+	 <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </p>
+
+  <p><%= f.submit %>
+<% end %>
+
+<br><br>
+<br><%= link_to "Cancel", babies_path %> 
+<br><%= link_to "Home Page", root_path %> 
+<br><%= link_to "Ooops!  I want to put in a new baby", new_baby_path %> 
+<br>
+
